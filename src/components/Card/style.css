@@ -1,0 +1,60 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--color-grey-0);
+  background-color: var(--color-grey-0);
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+  height: 6rem;
+}
+
+.listItem:hover {
+  background-color: white;
+}
+
+.listItem div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.listItem div + div {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.entrie {
+  border-left: 4px solid var(--color-secondary);
+}
+
+.expense {
+  border-left: 4px solid var(--color-grey-1);
+}
+
+.noItem {
+  list-style: none;
+  border: 2px solid var(--color-grey-0);
+  background-color: var(--color-grey-0);
+
+  border-radius: 0.25rem;
+  height: 6rem;
+  object-fit: fill;
+}
+
+.noItem img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+  align-self: center;
+}
+
+@media (min-width: 1024px) {
+  .listItem div + div {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 9.38rem;
+  }
+}

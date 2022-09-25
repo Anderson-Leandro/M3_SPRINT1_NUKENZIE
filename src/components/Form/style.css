@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.value-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.value-inputs div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+form .text-helper {
+  margin-bottom: 0.6rem;
+}
+
+form button {
+  margin-top: 1rem;
+}
+
+.value-inputs__input {
+  position: relative;
+}
+
+.value-inputs__input span {
+  position: absolute;
+  bottom: 1rem;
+  right: 01rem;
+}
